@@ -9,18 +9,18 @@ A zero configuration Bootstrap 5 Boilerplate bundled with modern tools and workf
             A FOSS (Free &amp; Open Source Software) project. Developed &amp; Maintained by <a href="https://github.com/provineet">@provineet</a>.
         </td>
         <td align="center">
-           <strong>Vineet Verma</strong>
+            <strong>Vineet Verma</strong>
         </td>
     </tr>
 </tbody></table>
+
+![version: v1.0.0](https://img.shields.io/github/package-json/v/provineet/bootplate?style=flat-square)
 
 <br>
 
 ![Gulp + Webpack Frontend Boilerplate](./bootstrap-starter-kit.png)
 
-<br>
-
-### Built-in Support For:
+### 📦 Built-in Support For:
 
 -   Bootstrap 5.x, FontAwesome 5.x
 -   SASS Compilation
@@ -33,7 +33,7 @@ A zero configuration Bootstrap 5 Boilerplate bundled with modern tools and workf
 -   BrowserSync for a no-lag browser reload
 -   Gulp Workflow
 
-### Salient Features
+### 🔥 Salient Features
 
 -   All your source files will reside inside 'src' folder.
 -   Write SCSS with 7-in-1 SASS Architecture Folder Structure (src/scss)
@@ -78,7 +78,7 @@ git clone https://github.com/provineet/bootplate
 4. Run `npm run serve`
    - to spin a development server, compile files and reload browser on file changes.
 
-Happy Coding 👍
+Happy Coding 🥳
 ```
 
 <br>
@@ -114,12 +114,6 @@ Gulpconfig.json file contains settings and variables used by the Gulp to perform
       <td>Enable/Disable assets minification while compilation.</td>
     </tr>
     <tr>
-    <td>browserSyncOptions.proxy</td>
-    <td>String</td>
-    <td>wpdev.local</td>
-    <td>Your localhost development url.</td>
-    </tr>
-    <tr>
     <td>JSBUILD</td>
     <td>String</td>
     <td>webpack | concat</td>
@@ -132,7 +126,7 @@ There are more options that can be tweaked inside gulpconfig.json feel free to c
 
 <br>
 
-### MODE
+### 🔽 MODE
 
 Manage the development or production mode of your theme.
 
@@ -142,7 +136,7 @@ Manage the development or production mode of your theme.
 }
 ```
 
-### COMPRESSION
+### 🔽 COMPRESSION
 
 Enable or disable this setting to enable compression for your CSS & JS files.
 
@@ -152,7 +146,7 @@ Enable or disable this setting to enable compression for your CSS & JS files.
 }
 ```
 
-### JSBUILD
+### 🔽 JSBUILD
 
 Controls how your theme's custom JavaScript files will be compiled.
 
@@ -167,7 +161,7 @@ Controls how your theme's custom JavaScript files will be compiled.
 
 <br>
 
-## Work with ES6 / Node Modules via Webpack
+## 🔽 Work with ES6 / Node Modules via Webpack
 
 Use available node modules via npm while writing your scripts using webpack.
 
@@ -179,7 +173,7 @@ Manage your webpack configration via webpack.config.js inside gulpfile.js folder
 
 <br>
 
-## Work with unbundled/plain JS with Babel Support
+## 🔽 Work with unbundled/plain JS with Babel Support
 
 -   Create your individual JS functions files inside src/js/scripts folder.
 -   You can these functions inside src/js/scripts.js file.
@@ -190,7 +184,7 @@ Manage your babel config by editing babel.config.json file in the root of your a
 
 <br>
 
-## List of available NPM Commands
+## 🔰 List of available NPM Commands
 
 <table class="table">
   <thead>
@@ -217,7 +211,7 @@ Manage your babel config by editing babel.config.json file in the root of your a
 
 <br>
 
-## List of available Gulp Commands for advanced usage
+## 🔰 List of available Gulp Commands for advanced usage
 
 <table class="table">
   <thead>
