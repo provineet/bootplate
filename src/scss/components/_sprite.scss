@@ -1,0 +1,156 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$audit-name: 'audit';
+$audit-x: 0px;
+$audit-y: 0px;
+$audit-offset-x: 0px;
+$audit-offset-y: 0px;
+$audit-width: 64px;
+$audit-height: 64px;
+$audit-total-width: 192px;
+$audit-total-height: 192px;
+$audit-image: './src/images/sprite.png';
+$audit: (0px, 0px, 0px, 0px, 64px, 64px, 192px, 192px, './src/images/sprite.png', 'audit', );
+$bank-name: 'bank';
+$bank-x: 64px;
+$bank-y: 0px;
+$bank-offset-x: -64px;
+$bank-offset-y: 0px;
+$bank-width: 64px;
+$bank-height: 64px;
+$bank-total-width: 192px;
+$bank-total-height: 192px;
+$bank-image: './src/images/sprite.png';
+$bank: (64px, 0px, -64px, 0px, 64px, 64px, 192px, 192px, './src/images/sprite.png', 'bank', );
+$compliance-name: 'compliance';
+$compliance-x: 0px;
+$compliance-y: 64px;
+$compliance-offset-x: 0px;
+$compliance-offset-y: -64px;
+$compliance-width: 64px;
+$compliance-height: 64px;
+$compliance-total-width: 192px;
+$compliance-total-height: 192px;
+$compliance-image: './src/images/sprite.png';
+$compliance: (0px, 64px, 0px, -64px, 64px, 64px, 192px, 192px, './src/images/sprite.png', 'compliance', );
+$contact-name: 'contact';
+$contact-x: 64px;
+$contact-y: 64px;
+$contact-offset-x: -64px;
+$contact-offset-y: -64px;
+$contact-width: 64px;
+$contact-height: 64px;
+$contact-total-width: 192px;
+$contact-total-height: 192px;
+$contact-image: './src/images/sprite.png';
+$contact: (64px, 64px, -64px, -64px, 64px, 64px, 192px, 192px, './src/images/sprite.png', 'contact', );
+$money-name: 'money';
+$money-x: 128px;
+$money-y: 0px;
+$money-offset-x: -128px;
+$money-offset-y: 0px;
+$money-width: 64px;
+$money-height: 64px;
+$money-total-width: 192px;
+$money-total-height: 192px;
+$money-image: './src/images/sprite.png';
+$money: (128px, 0px, -128px, 0px, 64px, 64px, 192px, 192px, './src/images/sprite.png', 'money', );
+$report-name: 'report';
+$report-x: 128px;
+$report-y: 64px;
+$report-offset-x: -128px;
+$report-offset-y: -64px;
+$report-width: 64px;
+$report-height: 64px;
+$report-total-width: 192px;
+$report-total-height: 192px;
+$report-image: './src/images/sprite.png';
+$report: (128px, 64px, -128px, -64px, 64px, 64px, 192px, 192px, './src/images/sprite.png', 'report', );
+$tax-name: 'tax';
+$tax-x: 0px;
+$tax-y: 128px;
+$tax-offset-x: 0px;
+$tax-offset-y: -128px;
+$tax-width: 64px;
+$tax-height: 64px;
+$tax-total-width: 192px;
+$tax-total-height: 192px;
+$tax-image: './src/images/sprite.png';
+$tax: (0px, 128px, 0px, -128px, 64px, 64px, 192px, 192px, './src/images/sprite.png', 'tax', );
+$spritesheet-width: 192px;
+$spritesheet-height: 192px;
+$spritesheet-image: './src/images/sprite.png';
+$spritesheet-sprites: ($audit, $bank, $compliance, $contact, $money, $report, $tax, );
+$spritesheet: (192px, 192px, './src/images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

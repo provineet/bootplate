@@ -1,0 +1,12 @@
+// Use this file for:
+// #1 Create your own SCSS variables
+// #2 Overwrite Bootstrap or FontAwesome default variables
+
+// List of default variables is available at: /src/vendors/bootstrap4/_variables.scss
+// List of default fontawesome varaibles is available at: /src/vendors/fontawesome/_variables.scss
+
+// Example: Overwrite a bootstrap variable
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+$primary: red; // Thats a sample how you could change a BootStrap variable.
+
+// You can declare your own variables here $tertiary-color: black;
