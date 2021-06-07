@@ -163,7 +163,7 @@ Controls how your theme's custom JavaScript files will be compiled.
 
 <br>
 
-## ⚙️ Work with ES6 / Node Modules via Webpack
+### ⚙️ Work with ES6 / Node Modules via Webpack
 
 Use available node modules via npm while writing your scripts using webpack.
 
@@ -175,7 +175,7 @@ Manage your webpack configration via webpack.config.js inside gulpfile.js folder
 
 <br>
 
-## ⚙️ Work with unbundled/plain JS with Babel Support
+### ⚙️ Work with unbundled/plain JS with Babel Support
 
 -   Create your individual JS functions files inside src/js/scripts folder.
 -   You can these functions inside src/js/scripts.js file.
