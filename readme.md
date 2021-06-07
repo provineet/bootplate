@@ -229,11 +229,11 @@ Manage your babel config by editing babel.config.json file in the root of your a
     </tr>
     <tr>
       <td>gulp build</td>
-      <td>Creats a production distributable folder of your theme.</td>
+      <td>Creats a production distributable folder of your HTML template.</td>
     </tr>
     <tr>
       <td>gulp devbuild</td>
-      <td>Creats a development distributable folder of your theme. Along with yout PHP theme files this version contains all your src and gulpfile.js and other settings files.</td>
+      <td>Creats a development distributable folder of your HTML template along with the src folder.</td>
     </tr>
     <tr>
       <td>gulp minify</td>
