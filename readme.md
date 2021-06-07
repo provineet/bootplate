@@ -1,4 +1,4 @@
-# BootPlate | An Awesome Bootstrap 5 Starter Kit
+# 🧰 BootPlate | An Awesome Bootstrap 5 Starter Kit
 
 A zero configuration Bootstrap 5 Boilerplate bundled with modern tools and workflows for an efficient UI/UX development experience.
 
@@ -45,7 +45,7 @@ A zero configuration Bootstrap 5 Boilerplate bundled with modern tools and workf
 -   Generate a production distributable copy of your application via gulp build.
 -   Generate a development distribution copy of your application via gulp devbuild.
 
-## ⚙️ Installtion
+## 🚀 Installtion
 
 It requires [nodejs](https://nodejs.org/en/) with [npm](https://www.npmjs.com/get-npm) and a global installation of [gulp 4.x](http://gulpjs.com/) on your development machine.
 
@@ -66,7 +66,7 @@ CLI version: 2.*.*
 Local version: 4.*.*
 ```
 
-## 🚀 Let's get you started quickly!
+## ⚡️ Let's get you started quickly!
 
 ```
 1. Clone this repo
@@ -186,7 +186,7 @@ Manage your babel config by editing babel.config.json file in the root of your a
 
 <br>
 
-## 🔰 List of available NPM Commands
+## #️⃣ List of available NPM Commands
 
 <table class="table">
   <thead>
@@ -213,7 +213,7 @@ Manage your babel config by editing babel.config.json file in the root of your a
 
 <br>
 
-## 🔰 List of available Gulp Commands for advanced usage
+## #️⃣ List of available Gulp Commands for advanced usage
 
 <table class="table">
   <thead>
