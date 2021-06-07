@@ -128,7 +128,7 @@ There are more options that can be tweaked inside gulpconfig.json feel free to c
 
 <br>
 
-### 🔽 MODE
+#### 🔽 MODE
 
 Manage the development or production mode of your theme.
 
@@ -138,7 +138,7 @@ Manage the development or production mode of your theme.
 }
 ```
 
-### 🔽 COMPRESSION
+#### 🔽 COMPRESSION
 
 Enable or disable this setting to enable compression for your CSS & JS files.
 
@@ -148,7 +148,7 @@ Enable or disable this setting to enable compression for your CSS & JS files.
 }
 ```
 
-### 🔽 JSBUILD
+#### 🔽 JSBUILD
 
 Controls how your theme's custom JavaScript files will be compiled.
 
